@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbox</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <header class="header">
+            <div class="logo_block">
+                <div class="logo">
+                    <div>
+                        <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M31.5173 31.04C29.784 31.04 28.544 30.5467 27.7973 29.56C27.0507 28.5467 26.6773 27.0667 26.6773 25.12C26.6773 23.1733 27.304 18.6933 28.5573 11.68H27.9173C26.2907 13.8133 24.944 16.36 23.8773 19.32C22.8107 22.28 22.1573 24.9467 21.9173 27.32C20.6107 28.5467 19.104 29.16 17.3973 29.16C16.704 29.16 16.0907 28.92 15.5573 28.44C15.0507 27.9333 14.544 27.0667 14.0373 25.84C13.0507 23.36 12.344 18.64 11.9173 11.68H11.2773C9.97068 17.4133 9.31734 21.4533 9.31734 23.8C9.31734 26.1467 9.71734 27.96 10.5173 29.24C8.91734 30.44 7.25068 31.04 5.51734 31.04C3.78401 31.04 2.54401 30.5467 1.79734 29.56C1.05068 28.5467 0.677344 27.0533 0.677344 25.08C0.677344 23.08 1.51734 17.44 3.19734 8.16L1.07734 3.88C4.09068 1.93333 6.83734 0.96 9.31734 0.96C10.4107 0.96 11.3307 1.08 12.0773 1.32C12.8507 1.53333 13.584 1.96 14.2773 2.6C14.9973 3.24 15.584 4.13333 16.0373 5.28C17.0773 7.86667 17.824 11.64 18.2773 16.6H18.7573C20.144 12.52 22.064 9.01333 24.5173 6.08C25.8507 4.50667 27.4373 3.26667 29.2773 2.36C31.144 1.45333 33.1573 0.999999 35.3173 0.999999C37.3707 0.999999 38.3973 2.24 38.3973 4.72C38.3973 5.54667 37.8773 8.62667 36.8373 13.96C35.824 19.2667 35.3173 22.4267 35.3173 23.44C35.3173 26.0267 35.7173 27.96 36.5173 29.24C34.9173 30.44 33.2507 31.04 31.5173 31.04Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+
+                </div>
+                <span class="logo_text">box</span>
+            </div>
+            <nav>
+                <ul class="header_menu">
+                    <li class="menu_item"><a href="">Home</a></li>
+                    <li class="menu_item"><a href="">TV Shows</a></li>
+                    <li class="menu_item"><a href="">Movies</a></li>
+                    <li class="menu_item"><a href="">Series</a></li>
+                </ul>
+            </nav>
+            <div class="header_icon_group">
+                <a href="">
+                    <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                            stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="">
+                    <svg fill="#fff" width="18px" height="18px" viewBox="0 0 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width=".5">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <title>bell</title>
+                            <path
+                                d="M29.885 25.117c-2.214-2.016-3.606-4.901-3.635-8.112l-0-0.005c0-8.338-4.457-12.506-9-13.15v-1.85c0-0.69-0.56-1.25-1.25-1.25s-1.25 0.56-1.25 1.25v0 1.85c-4.542 0.644-9 4.813-9 13.15-0.048 3.211-1.434 6.089-3.624 8.108l-0.008 0.007c-0.227 0.226-0.368 0.539-0.368 0.885 0 0.69 0.559 1.25 1.25 1.25h7.917c0.573 2.313 2.631 4 5.083 4s4.51-1.687 5.075-3.964l0.008-0.036h7.917c0.69-0 1.25-0.56 1.25-1.25 0-0.345-0.139-0.657-0.365-0.883l0 0zM16 28.75c-1.058-0.004-1.974-0.606-2.428-1.485l-0.007-0.015h4.871c-0.462 0.894-1.378 1.496-2.435 1.5h-0.001zM5.709 24.75c1.587-2.137 2.541-4.827 2.541-7.739 0-0.004 0-0.007 0-0.011v0.001c0-7.386 4.018-10.75 7.75-10.75 2.113 0.028 3.991 1.014 5.222 2.543l0.010 0.013c1.581 2.074 2.533 4.702 2.533 7.552 0 0.219-0.006 0.438-0.017 0.654l0.001-0.030c-0 0.042-0.001 0.092-0.001 0.141 0 2.876 0.955 5.529 2.565 7.659l-0.023-0.032z" />
+                        </g>
+
+                    </svg>
+                </a>
+                <a href="">
+                    <svg width="18px" height="18px" viewBox="-1 0 22 22" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <title>profile_plus_round [#1343]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width=".5" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-100.000000, -2159.000000)"
+                                    fill="#fff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M58.0831232,2004.99998 C58.0831232,2002.79398 56.2518424,2000.99998 54,2000.99998 C51.7481576,2000.99998 49.9168768,2002.79398 49.9168768,2004.99998 C49.9168768,2007.20598 51.7481576,2008.99998 54,2008.99998 C56.2518424,2008.99998 58.0831232,2007.20598 58.0831232,2004.99998 M61.9457577,2018.99998 L60.1246847,2018.99998 C59.5612137,2018.99998 59.1039039,2018.55198 59.1039039,2017.99998 C59.1039039,2017.44798 59.5612137,2016.99998 60.1246847,2016.99998 L60.5625997,2016.99998 C61.26898,2016.99998 61.790599,2016.30298 61.5231544,2015.66198 C60.2869889,2012.69798 57.3838883,2010.99998 54,2010.99998 C50.6161117,2010.99998 47.7130111,2012.69798 46.4768456,2015.66198 C46.209401,2016.30298 46.73102,2016.99998 47.4374003,2016.99998 L47.8753153,2016.99998 C48.4387863,2016.99998 48.8960961,2017.44798 48.8960961,2017.99998 C48.8960961,2018.55198 48.4387863,2018.99998 47.8753153,2018.99998 L46.0542423,2018.99998 C44.7782664,2018.99998 43.7738181,2017.85698 44.044325,2016.63598 C44.7874534,2013.27698 47.1076881,2010.79798 50.1639058,2009.67298 C48.7695192,2008.57398 47.8753153,2006.88998 47.8753153,2004.99998 C47.8753153,2001.44898 51.0234032,1998.61898 54.7339414,1999.04198 C57.422678,1999.34798 59.6500217,2001.44698 60.0532301,2004.06998 C60.4002955,2006.33098 59.4560733,2008.39598 57.8360942,2009.67298 C60.8923119,2010.79798 63.2125466,2013.27698 63.955675,2016.63598 C64.2261819,2017.85698 63.2217336,2018.99998 61.9457577,2018.99998 M57.0623424,2017.99998 C57.0623424,2018.55198 56.6050326,2018.99998 56.0415616,2018.99998 L55.2290201,2018.99998 C55.2290201,2019.99998 55.3351813,2020.99998 54.2082393,2020.99998 C53.6437475,2020.99998 53.1874585,2020.55198 53.1874585,2019.99998 L53.1874585,2018.99998 L51.9584384,2018.99998 C51.3949674,2018.99998 50.9376576,2018.55198 50.9376576,2017.99998 C50.9376576,2017.44798 51.3949674,2016.99998 51.9584384,2016.99998 L53.1874585,2016.99998 L53.1874585,2015.99998 C53.1874585,2015.44798 53.6437475,2014.99998 54.2082393,2014.99998 C54.7717103,2014.99998 55.2290201,2015.44798 55.2290201,2015.99998 L55.2290201,2016.99998 L56.0415616,2016.99998 C56.6050326,2016.99998 57.0623424,2017.44798 57.0623424,2017.99998"
+                                            id="profile_plus_round-[#1343]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+
+                    </svg>
+                </a>
+            </div>
+            <div class="header-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero_pic"><img src="images/pexels-sebastiaan-stam-1480690 1.webp" alt="pexels-sebastiaan-stam"></div>
+            <div class="hero_description">
+                <div class="hero_description_bg"></div>
+                <h1 class="title">Zack Snyder's Justice League</h1>
+                <div class="details">
+                    <span>2021</span>
+                    <div class="age">
+                        <span>18+</span>
+                        <img src="images/Rectangle 9.webp" alt="Rectangle 9">
+                    </div>
+                    <div class="hour">
+                        <span>4h 2min</span>
+                    </div>
+                    <div class="rating">
+                        <span>8.8</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_30)">
+                                <path
+                                    d="M3.612 15.443C3.226 15.641 2.788 15.294 2.866 14.851L3.696 10.121L0.172996 6.76501C-0.156004 6.45101 0.0149962 5.87701 0.455996 5.81501L5.354 5.11901L7.538 0.792012C7.735 0.402012 8.268 0.402012 8.465 0.792012L10.649 5.11901L15.547 5.81501C15.988 5.87701 16.159 6.45101 15.83 6.76501L12.307 10.121L13.137 14.851C13.215 15.294 12.777 15.641 12.391 15.443L8 13.187L3.612 15.443Z"
+                                    fill="#FFB800" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_30">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <p class="text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns
+                    forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an
+                    approaching threat of catastrophic proportions.</p>
+                <div class="button_group">
+                    <button class="button_accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 14 18" fill="none">
+                            <path
+                                d="M13.2923 10.3932L2.15764 17.7762C1.21269 18.4021 0 17.6442 0 16.3824V1.61647C0 0.356646 1.21094 -0.403248 2.15764 0.224664L13.2923 7.60763C13.5073 7.74786 13.686 7.95055 13.8103 8.19516C13.9345 8.43977 14 8.71759 14 9.00043C14 9.28328 13.9345 9.5611 13.8103 9.80571C13.686 10.0503 13.5073 10.253 13.2923 10.3932Z"
+                                fill="white" />
+                        </svg>
+                        <span>Watch</span>
+                    </button>
+                    <button class="button_option">More information</button>
+                </div>
+            </div>
+            
+        </section>
+        <main>
+            <div class="tranding_tv">
+                <div class="subtitle_block">
+                    <div><img src="images/Rectangle 9 (1).webp" alt="Rectangle 9 (1)"></div>
+                    <span>Trending TV Shows</span>
+                    <svg style="margin-top:3px" width="10px" height="15px" viewBox="-4.5 0 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff"
+                        stroke="#fff">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <title>arrow_right [#fff336]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)"
+                                    fill="#fff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                                            id="arrow_right-[#fff336]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+
+                    </svg>
+                </div>
+                <div class="carousel-inner">
+                    <div><a href=""><img src="images/2.webp" alt="2"></a></div>
+                    <div><a href=""><img src="images/6.webp" alt="6"></a></div>
+                    <div><a href=""><img src="images/3 (1).webp" alt="3 (1)"></a></div>
+                    <div><a href=""><img src="images/4.webp" alt="4"></a></div>
+                    <div><a href=""><img src="images/5 1.webp" alt="5 1"></a></div>
+                </div>
+            </div>
+            <div class="tranding_tv">
+                <div class="subtitle_block">
+                    <div><img src="images/Rectangle 9 (1).webp" alt="Rectangle 9 (1)"></div>
+                    <span>Trending Movies</span>
+                    <svg style="margin-top:3px" width="10px" height="15px" viewBox="-4.5 0 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff"
+                        stroke="#fff">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <title>arrow_right [#fff336]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)"
+                                    fill="#fff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                                            id="arrow_right-[#fff336]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+
+                    </svg>
+                </div>
+                <div class="carousel-inner">
+                    <div><a href=""><img src="images/11.webp" alt="11"></a></div>
+                    <div><a href=""><img src="images/12.webp" alt="12"></a></div>
+                    <div><a href=""><img src="images/13.webp" alt="13"></a></div>
+                    <div><a href=""><img src="images/8.webp" alt="8"></a></div>
+                    <div><a href=""><img src="images/9.webp" alt="9"></a></div>
+                    <div><a href=""><img src="images/10.webp" alt="10"></a></div>
+                </div>
+                <button class="button_accent">See more</button>
+            </div>
+
+            <section class="genres">
+                <div class="subtitle_block">
+                    <div><img src="images/Rectangle 9 (1).webp" alt="Rectangle 9 (1)"></div>
+                    <span>Popular Genres</span>
+                    <svg style="margin-top:3px" width="10px" height="15px" viewBox="-4.5 0 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff"
+                        stroke="#fff">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <title>arrow_right [#fff336]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)"
+                                    fill="#fff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                                            id="arrow_right-[#fff336]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+
+                    </svg>
+                </div>
+                <div class="carousel-inner-genres">
+                    <div style="background: linear-gradient(109deg, #FD093F 2.4%, #F383F1 100%);" class="genres_block">
+                        <a href="#">
+                            <div class="genres_item">
+                                <img src="images/hearts 1.webp" alt="">
+                                <span>Romance</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="background: linear-gradient(114deg, #0FFFDA 2.22%, #3CDB77 68.84%);"
+                        class="genres_block"><a href="#">
+                            <div class="genres_item">
+                                <img src="images/cinema 1.webp" alt="cinema 1">
+                                <span>Drama</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="background: linear-gradient(109deg, #B936FF 2.4%, #57DEDA 100%);" class="genres_block">
+                        <a href="#">
+                            <div class="genres_item">
+                                <img src="images/documentary 1.webp" alt="documentary 1">
+                                <span>Historical</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="background: linear-gradient(109deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);"
+                        class="genres_block"><a href="#">
+                            <div class="genres_item">
+                                <img src="images/killer 1.webp" alt="killer 1">
+                                <span>Action</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="background: linear-gradient(109deg, #FF6472 2.4%, #FDA75D 100%);" class="genres_block">
+                        <a href="#">
+                            <div class="genres_item">
+                                <img style="scale:1.7;" src="images/rocket 1.webp" alt="rocket 1">
+                                <span>Sci-fi</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="background: linear-gradient(110deg, #13547A 2.37%, #80D0C7 96.77%);"
+                        class="genres_block"><a href="#">
+                            <div class="genres_item">
+                                <img src="images/ghost 1.webp" alt="ghost 1">
+                                <span>Horror</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="background: linear-gradient(110deg, #FFF77B 2.37%, #FFBF42 50%);" class="genres_block">
+                        <a href="#">
+                            <div class="genres_item">
+                                <img src="images/smile 1.webp" alt="smile 1">
+                                <span>Comedy</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="background: linear-gradient(109deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);"
+                        class="genres_block"><a href="#">
+                            <div class="genres_item">
+                                <img src="images/castle 1.webp" alt="castle 1">
+                                <span>Documentary</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="actors">
+                <div class="subtitle_block">
+                    <div><img src="images/Rectangle 9 (1).webp" alt="Rectangle 9 (1)"></div>
+                    <span>Popular Actors & Directors</span>
+                    <svg style="margin-top:3px" width="10px" height="15px" viewBox="-4.5 0 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff"
+                        stroke="#fff">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+                            <title>arrow_right [#fff336]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)"
+                                    fill="#fff">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                                            id="arrow_right-[#fff336]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+
+                    </svg>
+                </div>
+                <div class="carousel-inner">
+                    <div class="actors_block">
+                        <div class="actors_photo">
+                            <img src="images/1 (1).webp" alt="1 (1)">
+                        </div>
+                        <span>Samantha Bowen</span>
+                    </div>
+                    <div class="actors_block">
+                        <div class="actors_photo">
+                            <img src="images/6 (1).webp" alt="6 (1)">
+                        </div>
+                        <span>Rhys Birch</span>
+                    </div>
+                    <div class="actors_block">
+                        <div class="actors_photo">
+                            <img src="images/2 (1).webp" alt="2 (1)">
+                        </div>
+                        <span>James Holloway</span>
+                    </div>
+                    <div class="actors_block">
+                        <div class="actors_photo">
+                            <img src="images/3 (2).webp" alt="3 (2)">
+                        </div>
+                        <span>Joshua Walton</span>
+                    </div>
+                    <div class="actors_block">
+                        <div class="actors_photo">
+                            <img src="images/4 (1).webp" alt="4 (1)">
+                        </div>
+                        <span>Patrick Elliott</span>
+                    </div>
+                    <div class="actors_block">
+                        <div class="actors_photo">
+                            <img src="images/5.webp" alt="5">
+                        </div>
+                        <span>Morgan O'Neill</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="coming_soon">
+                <div class="coming_soon_photo"><img src="images/Big.Buck.Bunny.-.Opening 1.webp"
+                        alt="Big.Buck.Bunny.-.Opening 1.webp"></div>
+                <div class="coming_soon_info">
+                    <img src="images/2021 2.webp" alt="2021 2.webp">
+                    <span>Coming Soon...</span>
+                </div>
+            </section>
+            <section class="register">
+                <span>Are You New Here ?<br>
+                    Don’t wait, Register Now. </span>
+                <button class="button_accent">Register Now</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="logo_block">
+                <div class="logo">
+                    <div>
+                        <svg width="30" height="25" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M31.5173 31.04C29.784 31.04 28.544 30.5467 27.7973 29.56C27.0507 28.5467 26.6773 27.0667 26.6773 25.12C26.6773 23.1733 27.304 18.6933 28.5573 11.68H27.9173C26.2907 13.8133 24.944 16.36 23.8773 19.32C22.8107 22.28 22.1573 24.9467 21.9173 27.32C20.6107 28.5467 19.104 29.16 17.3973 29.16C16.704 29.16 16.0907 28.92 15.5573 28.44C15.0507 27.9333 14.544 27.0667 14.0373 25.84C13.0507 23.36 12.344 18.64 11.9173 11.68H11.2773C9.97068 17.4133 9.31734 21.4533 9.31734 23.8C9.31734 26.1467 9.71734 27.96 10.5173 29.24C8.91734 30.44 7.25068 31.04 5.51734 31.04C3.78401 31.04 2.54401 30.5467 1.79734 29.56C1.05068 28.5467 0.677344 27.0533 0.677344 25.08C0.677344 23.08 1.51734 17.44 3.19734 8.16L1.07734 3.88C4.09068 1.93333 6.83734 0.96 9.31734 0.96C10.4107 0.96 11.3307 1.08 12.0773 1.32C12.8507 1.53333 13.584 1.96 14.2773 2.6C14.9973 3.24 15.584 4.13333 16.0373 5.28C17.0773 7.86667 17.824 11.64 18.2773 16.6H18.7573C20.144 12.52 22.064 9.01333 24.5173 6.08C25.8507 4.50667 27.4373 3.26667 29.2773 2.36C31.144 1.45333 33.1573 0.999999 35.3173 0.999999C37.3707 0.999999 38.3973 2.24 38.3973 4.72C38.3973 5.54667 37.8773 8.62667 36.8373 13.96C35.824 19.2667 35.3173 22.4267 35.3173 23.44C35.3173 26.0267 35.7173 27.96 36.5173 29.24C34.9173 30.44 33.2507 31.04 31.5173 31.04Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+
+                </div>
+                <span class="logo_text">box</span>
+            </div>
+            <div class="footer_lists">
+                <ul>
+                    <li><a href="">Voice over and Subtitle</a></li>
+                    <li><a href="">Media Center</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Voice Description</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Legal Provisions</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Job Opportunities</a></li>
+                    <li><a href="">Cookies Preferences</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Corporate Informations</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
